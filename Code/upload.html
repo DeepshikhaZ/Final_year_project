@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Upload Image Samples</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post" action="upload.php" enctype="multipart/form-data">
+					<span class="login100-form-logo">
+						<i class="fas fa-upload"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Upload Image Samples
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter name">
+						<input class="input100" type="text" name="name" placeholder="Name" required>
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter age">
+						<input class="input100" type="number" name="age" placeholder="Age" required>
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+					<div style="color:#FFFFFF">
+						<label class="label-radio100" for="ckb1">
+							GENDER
+						</label>
+					</div>
+
+					<div class="contact100-form-radio" style="color:#FFFFFF; font-size: 0.8rem">
+						<input class="input-radio100" id="ckb1" type="radio" name="gender" value="0" required>
+						<label class="label-radio100" for="ckb1" style="display:inline-block">
+							MALE
+						</label>
+					</div>
+					<div class="contact100-form-radio" style="color:#FFFFFF; font-size: 0.8rem">
+						<input class="input-radio100" id="ckb1" type="radio" name="gender" value="1" required>
+						<label class="label-radio100" for="ckb1" style="display:inline-block">
+							FEMALE
+						</label>
+					</div>
+					<br>
+					<!-- <div class="wrap-input100 validate-input" data-validate = "Enter image" style="color: #FFFFFF"> -->
+						<input  type="file" name="upload[]" id="upload" style="color: #FFFFFF" multiple required>
+						<!-- <span class="focus-input100" data-placeholder="&#xf207;"></span> -->
+					<!-- </div> -->
+
+
+					<!-- <div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div> -->
+					<br>
+					 <br>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Upload
+						</button>
+						<!-- <input type="submit" value="Upload" class="login100-form-btn"> -->
+					</div>
+
+					<!-- <div class="text-center p-t-90">
+						<a class="txt1" href="#">
+							Forgot Password?
+						</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
